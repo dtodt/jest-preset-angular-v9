@@ -21,5 +21,13 @@
       }
     }
   },
-  "projects": {}
+  "projects": {
+    "prj": {
+      "tags": []
+    },
+    "prj-e2e": {
+      "tags": [],
+      "implicitDependencies": ["prj"]
+    }
+  }
 }
