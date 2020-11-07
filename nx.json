@@ -29,6 +29,9 @@
     "prj-e2e": {
       "tags": [],
       "implicitDependencies": ["prj"]
+    },
+    "components-one": {
+      "tags": []
     }
   }
 }
