@@ -4,7 +4,7 @@
     "prj": {
       "projectType": "application",
       "schematics": {
-        "@nrwl/angular:component": {
+        "@schematics/angular:component": {
           "style": "scss"
         }
       },
@@ -78,7 +78,8 @@
           "options": {
             "tsConfig": [
               "apps/prj/tsconfig.app.json",
-              "apps/prj/tsconfig.spec.json"
+              "apps/prj/tsconfig.spec.json",
+              "apps/prj/tsconfig.editor.json"
             ],
             "exclude": ["**/node_modules/**", "!apps/prj/**/*"]
           }
@@ -87,9 +88,7 @@
           "builder": "@nrwl/jest:jest",
           "options": {
             "jestConfig": "apps/prj/jest.config.js",
-            "tsConfig": "apps/prj/tsconfig.spec.json",
-            "passWithNoTests": true,
-            "setupFile": "apps/prj/src/test-setup.ts"
+            "passWithNoTests": true
           }
         }
       }

@@ -1,20 +1,12 @@
-import { ɵivyEnabled as ivyEnabled } from '@angular/core';
-import { async, TestBed } from '@angular/core/testing';
+import { TestBed } from '@angular/core/testing';
 import { AppComponent } from './app.component';
 
-describe('Must have ivy', () => {
-  it('ivy has to be enabled', () => {
-    console.log('ie', ivyEnabled);
-    expect(ivyEnabled).toBeTruthy();
-  });
-});
-
 describe('AppComponent', () => {
-  beforeEach(async(() => {
-    TestBed.configureTestingModule({
+  beforeEach(async () => {
+    await TestBed.configureTestingModule({
       declarations: [AppComponent],
     }).compileComponents();
-  }));
+  });
 
   it('should create the app', () => {
     const fixture = TestBed.createComponent(AppComponent);
