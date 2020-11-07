@@ -1,5 +1,5 @@
 {
-  "name": "prj-971",
+  "name": "prj",
   "version": "0.0.0",
   "license": "MIT",
   "scripts": {
@@ -46,7 +46,7 @@
     "@angular/cli": "^9.1.12",
     "@angular/compiler-cli": "^9.1.12",
     "@angular/language-service": "^9.1.12",
-    "@nrwl/angular": "^9.7.1",
+    "@nrwl/angular": "^10.3.2",
     "@nrwl/cli": "^10.3.2",
     "@nrwl/cypress": "^10.3.2",
     "@nrwl/jest": "^10.3.2",
